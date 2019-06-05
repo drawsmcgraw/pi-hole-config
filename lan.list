@@ -1,0 +1,18 @@
+# /etc/pihole/lan.list
+
+### Lab Network ###
+192.168.10.3   sm-esxi-01.lab.hippiehouse.net
+192.168.10.4   sm-ipmi-01.lab.hippiehouse.net
+192.168.10.10  vcenter-01.lab.hippiehouse.net
+192.168.10.11  opsman.pcf.lab.hippiehouse.net
+192.168.10.12  bosh.pcf.lab.hippiehouse.net
+
+# .30 is reserved for SSH access to the Diego Brain
+192.168.10.30   ssh.sys.pcf.lab.hippiehouse.net
+
+# .31 is reserved for PCF HAProxy and is the IP for the wildcard entry
+# .32 & .33 are reserved for TCP Routers.
+
+### Home Network ###
+192.168.1.47   cloud-key.home.hippiehouse.net
+
