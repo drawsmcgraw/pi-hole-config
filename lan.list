@@ -5,14 +5,22 @@
 192.168.10.4   sm-ipmi-01.lab.hippiehouse.net
 192.168.10.10  vcenter-01.lab.hippiehouse.net
 192.168.10.11  opsman.pcf.lab.hippiehouse.net
-192.168.10.12  bosh.pcf.lab.hippiehouse.net
+192.168.10.30  bosh.pcf.lab.hippiehouse.net
+192.168.10.21  pks.lab.hippiehouse.net
+192.168.10.22  sandbox.pks.lab.hippiehouse.net
 
-# .30 is reserved for SSH access to the Diego Brain
-192.168.10.30   ssh.sys.pcf.lab.hippiehouse.net
+# .31 is reserved for SSH access to the Diego Brain
+192.168.10.31   ssh.sys.pcf.lab.hippiehouse.net
 
-# .31 is reserved for PCF HAProxy and is the IP for the wildcard entry
-# .32 & .33 are reserved for TCP Routers.
+# .35 is reserved for PCF HAProxy and is the IP for the wildcard entry
+# .32 & .33 are reserved for the routers (non-tcp).
+# .34 is reserved for the TCP router
 
 ### Home Network ###
 192.168.1.47   cloud-key.home.hippiehouse.net
 
+
+
+### k8s ingress ###
+192.168.10.24  cf-demo-app.lab.hippiehouse.net
+192.168.10.24  spring-music-demo.lab.hippiehouse.net
