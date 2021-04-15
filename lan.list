@@ -1,16 +1,32 @@
-# /etc/pihole/lan.list
-
 ### Lab Network ###
 192.168.10.3   sm-esxi-01.lab.hippiehouse.net
 192.168.10.4   sm-ipmi-01.lab.hippiehouse.net
 192.168.10.10  vcenter-01.lab.hippiehouse.net
-192.168.10.11  opsman.pcf.lab.hippiehouse.net
-192.168.10.30  bosh.pcf.lab.hippiehouse.net
-192.168.10.21  pks.lab.hippiehouse.net
-192.168.10.22  sandbox.pks.lab.hippiehouse.net
+
+#
+# WCP
+#
+
+# Avi Proxy on management network
+192.168.10.11  avi.lab.hippiehouse.net
+
+# 192.168.10.15 - 192.168.10.20 are reserved for WCP Supervisor control plane
+
+
+#
+# TAS
+#
+
+#192.168.10.11  opsman.pcf.lab.hippiehouse.net
+#192.168.10.30  bosh.pcf.lab.hippiehouse.net
+#192.168.10.21  pks.lab.hippiehouse.net
+#192.168.10.22  sandbox.pks.lab.hippiehouse.net
+
+# Folding @ Home
+#192.168.10.12  fah.lab.hippiehouse.net
 
 # .31 is reserved for SSH access to the Diego Brain
-192.168.10.31   ssh.sys.pcf.lab.hippiehouse.net
+#192.168.10.31   ssh.sys.pcf.lab.hippiehouse.net
 
 # .35 is reserved for PCF HAProxy and is the IP for the wildcard entry
 # .32 & .33 are reserved for the routers (non-tcp).
@@ -22,5 +38,15 @@
 
 
 ### k8s ingress ###
-192.168.10.24  cf-demo-app.lab.hippiehouse.net
-192.168.10.24  spring-music-demo.lab.hippiehouse.net
+#192.168.10.24  cf-demo-app.lab.hippiehouse.net
+#192.168.10.24  spring-music-demo.lab.hippiehouse.net
+
+
+# k8s workloads
+192.168.11.145 sonarqube.lab.hippiehouse.net
+192.168.11.149 harbor.lab.hippiehouse.net
+192.168.11.151 excalidraw.lab.hippiehouse.net
+192.168.11.152 kubeapps.lab.hippiehouse.net
+192.168.11.153 kubecost.lab.hippiehouse.net
+192.168.11.154 blog.lab.hippiehouse.net
+192.168.11.157 better-blog.lab.hippiehouse.net
